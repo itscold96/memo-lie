@@ -1,0 +1,35 @@
+{
+  // TypeScript 코드를 파싱하는 데 사용되는 파서 설정
+  "parser": "@typescript-eslint/parser",
+
+  // 플러그인 및 프리티어 규칙을 확장하여 사용
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+
+  // 파서 옵션 설정
+  "parserOptions": {
+    // 사용하는 ECMAScript 버전 (2018)
+    "ecmaVersion": 2018,
+
+    // 모듈 형식의 코드 사용
+    "sourceType": "module",
+
+    // JSX(React) 기능 활성화
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+
+  // 사용자 정의 규칙 설정 (현재는 비어있음)
+  "rules": {},
+
+  // 환경 및 라이브러리에 대한 설정
+  "settings": {
+    // React 버전을 자동으로 감지하여 설정
+    "react": {
+      "version": "detect"
+    }
+  }
+}
