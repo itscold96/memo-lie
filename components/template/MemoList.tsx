@@ -1,4 +1,4 @@
-import MemoItem from '@/components/@home/memoList/MemoItem';
+import MemoItem from '@/components/molecule/MemoItem';
 
 function MemoList() {
   const testObjList = [

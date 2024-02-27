@@ -1,4 +1,4 @@
-import MemoCard from '@/components/@home/randomMemoCard/memoCard';
+import MemoCard from '@/components/molecule/memoCard';
 
 function MemoCards() {
   return (

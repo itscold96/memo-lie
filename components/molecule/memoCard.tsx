@@ -1,4 +1,10 @@
+import Button from '@/components/atom/Button';
+
 function MemoCard() {
+  const handleClickShowAnswer = () => {
+    console.log('답변 보기');
+  };
+
   return (
     <div
       className={
@@ -13,9 +19,12 @@ function MemoCard() {
         메모된 질문메모된 질문메모된 질문메모된 질문메모된 질문메모된 질문
       </div>
       <div className={'flex items-center h-1/5'}>
-        <button className={'h-full w-full bg-blue-400 px-1.5 rounded-2xl'}>
-          답변 보기
-        </button>
+        <Button
+          handle_click={handleClickShowAnswer}
+          class_name={'h-full w-full bg-blue-400 px-1.5 rounded-2xl'}
+        >
+          <span>답변 보기</span>
+        </Button>
       </div>
     </div>
   );

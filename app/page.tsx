@@ -1,3 +1,4 @@
+'use client';
 import MemoCards from '@/components/template/MemoCards';
 import MemoList from '@/components/template/MemoList';
 
