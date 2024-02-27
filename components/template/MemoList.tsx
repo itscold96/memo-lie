@@ -17,10 +17,10 @@ function MemoList() {
   ];
 
   return (
-    <section className={'bg-white h-2/3 w-full'}>
+    <section className={'h-2/3 w-full'}>
       <article
         className={
-          'flex flex-col gap-3 h-full w-full bg-black rounded-tl-[2.5rem] py-7 px-4 text-white overflow-y-auto'
+          'flex flex-col gap-3 h-full w-full bg-black rounded-tl-[2.5rem] py-7 px-4 text-white overflow-y-auto scrollbar-hide'
         }
       >
         {testObjList.map((test) => (
