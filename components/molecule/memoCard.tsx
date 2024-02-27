@@ -20,6 +20,7 @@ function MemoCard() {
       }
     >
       <Question
+        prefix={'Q.'}
         content={QuestionValue}
         className={
           'h-4/5 w-full overflow-y-auto scrollbar-hide text-[1.4rem] font-bold rounded-[2.5rem] px-5 py-5'
