@@ -4,7 +4,7 @@ interface QuestionProps {
   prefix?: string;
 }
 
-function Question(props: QuestionProps) {
+function Paragraph(props: QuestionProps) {
   return (
     <p className={props.className}>
       {props.prefix && props.prefix + ' '}
@@ -13,4 +13,4 @@ function Question(props: QuestionProps) {
   );
 }
 
-export default Question;
+export default Paragraph;

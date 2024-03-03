@@ -2,7 +2,12 @@ import MemoItem from '@/components/molecule/MemoItem';
 
 function MemoList() {
   const testObjList = [
-    { id: 'm1', title: '메모1', category: ['test1'] },
+    {
+      id: 'm1',
+      title:
+        '메모jdsahdjksahdkjsahdjksa jsadhjk sadjhsajkdh asjdhasjdh sidjsoaio sidjasidojusahduis',
+      category: ['test1'],
+    },
     { id: 'm2', title: '메모2', category: ['test2'] },
     { id: 'm3', title: '메모3', category: ['test3'] },
     { id: 'm4', title: '메모4', category: ['test4'] },
@@ -20,7 +25,7 @@ function MemoList() {
     <section className={'h-2/3 w-full'}>
       <article
         className={
-          'flex flex-col gap-3 h-full w-full bg-black rounded-tl-[2.5rem] py-7 px-4 text-white overflow-y-auto scrollbar-hide'
+          'flex h-full w-full flex-col gap-3 overflow-y-auto rounded-tl-[2.5rem] bg-black px-4 py-7 text-white scrollbar-hide'
         }
       >
         {testObjList.map((test) => (
