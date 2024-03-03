@@ -1,8 +1,9 @@
 import Span from '@/components/atom/Span';
+import CategoryTags from '@/components/molecule/CategoryTags';
 
 interface MemoItemProps {
   title: string;
-  category: string[];
+  categories: string[];
 }
 
 function MemoItem(props: MemoItemProps) {
@@ -12,14 +13,8 @@ function MemoItem(props: MemoItemProps) {
         'flex flex-col gap-2 rounded-[0.9rem] bg-white px-2 py-1.5  text-black'
       }
     >
-      <Span
-        prefix={'Q.'}
-        content={props.title}
-        className={
-          'line-clamp-2 h-full w-full overflow-hidden text-ellipsis text-base font-medium'
-        }
-      />
-      <div>카테고리들: {props.category}</div>
+      <Span style={'memoTitle'} prefix={'Q.'} content={props.title} />
+      <CategoryTags spanTitle={'Tags: '} categories={props.categories} />
     </div>
   );
 }

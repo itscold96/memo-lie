@@ -1,13 +1,19 @@
 interface SpanProps {
-  prefix: string;
+  prefix?: string;
   content: string;
-  className: string;
+  style: 'memoTitle' | 'tag';
 }
+
+const spanStyle: Record<string, string> = {
+  memoTitle: 'line-clamp-2 overflow-hidden text-ellipsis text-base font-medium',
+  tag: 'font-medium text-xs',
+};
 
 function Span(props: SpanProps) {
   return (
-    <span className={props.className}>
-      {props.prefix} {props.content}
+    <span className={spanStyle[props.style]}>
+      {props.prefix}
+      {props.content}
     </span>
   );
 }
